@@ -12,7 +12,7 @@ jobs:
       with:
         submodules: true
         fetch-depth: 0
-        token: ${{ secrets.GIT_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
@@ -33,18 +33,18 @@ jobs:
       with:
         fetch-depth: 0
         ref: main
-        token: ${{ secrets.GIT_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
     - name: Clone downstream repo
       uses: actions/checkout@v2
       with:
         repository: oscal-compass/e2e-demo-cac-ssp
         path: './e2e-demo-cac-ssp'
-        token: ${{ secrets.GIT_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         fetch-depth: 0
     - name: Update ssp
       run: bash scripts/automation/update_ssp.sh
       env:
-        GH_TOKEN: ${{ secrets.GIT_TOKEN }}
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   merge-main-to-develop:
     name: Merge main to develop
     runs-on: ubuntu-latest
@@ -56,7 +56,7 @@ jobs:
     steps:
     - uses: tukasz/direct-merge-action@master
       with:
-        GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         source-branch: main
         target-branch: develop
         commit-message: "chore: Merge back version tags and changelog into develop."
