@@ -13,9 +13,12 @@ The [demo overview](https://github.com/oscal-compass/e2e-demo).
 2. data/oscap.csv provided by Vikas
 3. data/Makefile creates:
     - component-definitions/RHEL9-1.0.0/component-definition.json (software from CIS Benchmark snippet)
-    - data/oscap/component-definition.json (validation from oscap))
+    - component-definitions/oscap/component-definition.json (validation from oscap))
+4. Automations fixed by changed GIT_TOKEN to GITHUB_TOKEN
+5. Markdown is not generated or assembled due to: `if [ "$compdef" != "IBM_FS_FR_COMBINED" ]; then`
 
 ##### ToDo
 
-1. How to merge validation component?
-2. Rectify automation
+1. Coordinate with Yana-san's checks/rules/controls
+
+
