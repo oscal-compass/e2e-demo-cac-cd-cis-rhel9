@@ -3,6 +3,10 @@ on:
   push:
     branches:
       - develop
+permissions:
+  contents: write  # Allows write access to repository content
+  issues: write    # Allows write access to issues (if needed)
+  pull-requests: write  # Allows write access to pull requests (if needed)
 jobs:
   auto-content-update:
     name: Autoupdate content
