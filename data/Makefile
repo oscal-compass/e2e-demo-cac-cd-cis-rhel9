@@ -22,7 +22,7 @@ SOURCE = $(SOURCE_INIT)
 
 TRESTLE_CLONE = /tmp/trestle-clone
 
-all: venv cd
+all: venv cd validation
 
 .SILENT: venv
 venv:
@@ -36,9 +36,14 @@ venv:
 	fi
 	
 cd:
-	echo "=> create component definition"; \
+	echo "=> create controls component definition"; \
 	source $(SOURCE)/bin/activate; \
 	trestle task cis-xlsx-to-oscal-cd -c CIS_Red_Hat_Enterprise_Linux_9_Benchmark_v1.0.0.config
+		
+validation:
+	echo "=> create validation component definition"; \
+	source $(SOURCE)/bin/activate; \
+	trestle task csv-to-oscal-cd -c oscap.config
 	
 clean: clean-venv
 
