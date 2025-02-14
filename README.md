@@ -24,5 +24,9 @@ The [demo overview](https://github.com/oscal-compass/e2e-demo).
 Remarks: 
 
     - 5.1.1 has no CIS Controls
+    
+##### Issues
+
+<img src="images/automation-error.png" width="50%">
 
 
