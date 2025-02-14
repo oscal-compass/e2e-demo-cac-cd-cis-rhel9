@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "4a06b7b7-108f-4922-b9e5-5bb68ec01ea1",
+    "uuid": "491d9e19-421b-4f2b-b0e6-0f7890a81c10",
     "metadata": {
       "title": "OSCAL validation",
-      "last-modified": "2025-02-14T13:04:30+00:00",
+      "last-modified": "2025-02-14T16:38:54+00:00",
       "version": "1.0.0",
       "oscal-version": "1.1.3"
     },
     "components": [
       {
-        "uuid": "355699f1-3d0e-4b44-978c-14819dc4a544",
+        "uuid": "f5a238ea-6ac7-4f80-be25-51b763943713",
         "type": "validation",
         "title": "OSCAP",
         "description": "OSCAP",
