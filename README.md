@@ -17,8 +17,12 @@ The [demo overview](https://github.com/oscal-compass/e2e-demo).
 4. Automations fixed by changed GIT_TOKEN to GITHUB_TOKEN
 5. Markdown is not generated or assembled due to: `if [ "$compdef" != "IBM_FS_FR_COMBINED" ]; then`
 
-##### ToDo
+##### CTP rules
 
-1. Coordinate with Yana-san's checks/rules/controls
+<img src="images/ctp-rules.png" width="50%">
+
+Remarks: 
+
+    - 5.1.1 has no CIS Controls
 
 
