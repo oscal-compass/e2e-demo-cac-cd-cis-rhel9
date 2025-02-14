@@ -23,8 +23,8 @@ jobs:
       run: source scripts/automation/release.sh
     - name: Push the changes
       run: bash scripts/automation/push.sh
-  downstream-repo-update:
-    name: Update downstream repositories
+  downstream-repo-update-ssp:
+    name: Update downstream repository - ssp
     runs-on: ubuntu-latest
     needs: release
     steps:
@@ -37,12 +37,12 @@ jobs:
     - name: Clone downstream repo
       uses: actions/checkout@v2
       with:
-        repository: ComplianceAsCode/ocp-oscal-profiles
-        path: './ocp-oscal-profiles'
+        repository: oscal-compass/e2e-demo-cac-ssp
+        path: './e2e-demo-cac-ssp'
         token: ${{ secrets.GIT_TOKEN }}
         fetch-depth: 0
-    - name: Update profiles
-      run: bash scripts/automation/update_profile.sh
+    - name: Update ssp
+      run: bash scripts/automation/update_ssp.sh
       env:
         GH_TOKEN: ${{ secrets.GIT_TOKEN }}
   merge-main-to-develop:

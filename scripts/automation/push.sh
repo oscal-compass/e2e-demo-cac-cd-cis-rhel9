@@ -27,11 +27,15 @@ function github-branch-commit() {
         return 1
     fi
 
-    if ! git add catalogs; then
+    if ! git add component-definitions; then
         err "failed to add modified files to git index"
         return 1
     fi
-    if ! git add md_catalogs; then
+    if ! git add md_components; then
+        err "failed to add modified files to git index"
+        return 1
+    fi
+    if ! git add data; then
         err "failed to add modified files to git index"
         return 1
     fi
@@ -60,7 +64,7 @@ function github-branch-commit() {
     
     local remote=origin
     if [[ $GIT_TOKEN ]]; then
-        remote=https://$GIT_TOKEN@github.com/ComplianceAsCode/ocp-oscal-catalogs
+        remote=https://$GIT_TOKEN@github.com/oscal-compass/e2e-demo-cac-cd-cis-rhel9
     fi
     if [[ $GIT_BRANCH != main ]] && [[ $GIT_BRANCH != develop ]]; then
         msg "not pushing updates to branch $GIT_BRANCH"
