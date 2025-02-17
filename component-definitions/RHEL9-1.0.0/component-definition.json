@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "d4839655-8d4d-4a0c-92ad-087706abbcc3",
+    "uuid": "122e3f9e-4d1c-4385-bff8-b964300a3f7a",
     "metadata": {
       "title": "CIS Red Hat Enterprise Linux 9 Benchmark",
-      "last-modified": "2025-02-14T20:43:43+00:00",
+      "last-modified": "2025-02-17T17:53:12+00:00",
       "version": "1.1.0",
       "oscal-version": "1.1.3"
     },
     "components": [
       {
-        "uuid": "c7c27c60-b3aa-448f-9d0e-c878d5efca2d",
+        "uuid": "51118f62-aa58-4b1e-9a38-fb48b410a652",
         "type": "software",
         "title": "Red Hat Enterprise Linux 9",
         "description": "Red Hat Enterprise Linux 9",
@@ -2525,12 +2525,12 @@
         ],
         "control-implementations": [
           {
-            "uuid": "13ca5b3b-12c8-4b29-a206-db26c6778af6",
+            "uuid": "13fe2643-a6d7-4989-80eb-970e90802fd8",
             "source": "catalogs/CIS_controls_v8/catalog.json",
             "description": "CIS catalog v8",
             "implemented-requirements": [
               {
-                "uuid": "0d355fa8-f671-4001-a6df-bae370122e17",
+                "uuid": "d4815a9c-f6f9-48c9-9e0b-227ec4b92e7e",
                 "control-id": "cisc-3.3",
                 "description": "",
                 "props": [
@@ -2577,7 +2577,7 @@
                 ]
               },
               {
-                "uuid": "0a531af5-c4d3-4fde-9bc6-e50d932e8508",
+                "uuid": "f0b53b16-1743-4b31-acfa-1bf39bc30a4a",
                 "control-id": "cisc-4.8",
                 "description": "",
                 "props": [
@@ -2589,7 +2589,7 @@
                 ]
               },
               {
-                "uuid": "9d997f47-dcb1-4982-b2a5-00e81f70cf0a",
+                "uuid": "7da3e344-2f75-4f01-80db-9af197b1fb7a",
                 "control-id": "cisc-4.1",
                 "description": "",
                 "props": [
@@ -2621,7 +2621,7 @@
                 ]
               },
               {
-                "uuid": "18305901-07be-43c2-bdab-fd945e347ccc",
+                "uuid": "fc38d608-9e40-4426-b12c-b4deb36efcb5",
                 "control-id": "cisc-8.5",
                 "description": "",
                 "props": [
@@ -2633,7 +2633,7 @@
                 ]
               },
               {
-                "uuid": "79c5063b-ef42-4428-b71c-04e3a577f0fb",
+                "uuid": "e4a8a0c4-a5e1-48fc-9dbe-4106a2614e81",
                 "control-id": "cisc-6.2",
                 "description": "",
                 "props": [
@@ -2645,7 +2645,7 @@
                 ]
               },
               {
-                "uuid": "007cacfc-bdc5-46e4-8491-2a166e7cc8ca",
+                "uuid": "d5cc307d-3c23-4a20-bfba-acdf815026cb",
                 "control-id": "cisc-5.2",
                 "description": "",
                 "props": [
