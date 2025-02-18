@@ -1,9 +1,7 @@
-# End-to-End Demo: Compliance as Code CIS Benchmarks Catalog (snippet)
-End-to-End Demo: Compliance as Code CIS Benchmarks Catalog (snippet)
+# End-to-End Demo: Compliance as Code CIS Benchmarks Component Definition RHEL9 1.0.0 (snippet)
+End-to-End Demo: Compliance as Code CIS Benchmarks Component Definition RHEL9 1.0.0 (snippet)
 
-This repo comprises OSCAL catalog for the end-to-end demo. The OSCAL catalog is for CIS Benchmarks, but for proprietary reasons only a portion (snippet) of the entire catalog is used for this demo.
-
-The full catalog can be obtained from [CIS Controls OSCAL Repository](https://www.cisecurity.org/insights/blog/introducing-the-cis-controls-oscal-repository).
+This repo comprises OSCAL component definition for the end-to-end demo. The OSCAL component definition is for CIS Benchmarks RHEL9 1.0.0 (snippet).
 
 The [demo overview](https://github.com/oscal-compass/e2e-demo).
 
@@ -14,8 +12,6 @@ The [demo overview](https://github.com/oscal-compass/e2e-demo).
 3. data/Makefile creates:
     - component-definitions/RHEL9-1.0.0/component-definition.json (software from CIS Benchmark snippet)
     - component-definitions/oscap/component-definition.json (validation from oscap))
-4. Automations fixed by changed GIT_TOKEN to GITHUB_TOKEN
-5. Markdown is not generated or assembled due to: `if [ "$compdef" != "IBM_FS_FR_COMBINED" ]; then`
 
 ##### CTP rules
 
@@ -24,9 +20,6 @@ The [demo overview](https://github.com/oscal-compass/e2e-demo).
 Remarks: 
 
     - 5.1.1 has no CIS Controls
-    
-##### Issues
 
-<img src="images/automation-error.png" width="50%">
 
 
