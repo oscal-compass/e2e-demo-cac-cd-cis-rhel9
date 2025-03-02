@@ -1,0 +1,47 @@
+{
+  "profile": {
+    "uuid": "e18b932e-8468-4121-bedd-1dc6291b5030",
+    "metadata": {
+      "title": "CIS Controls",
+      "last-modified": "2025-03-02T04:30:52.486975+00:00",
+      "version": "0.2.4",
+      "oscal-version": "1.1.3"
+    },
+    "imports": [
+      {
+        "href": "catalogs/cis-v8/catalog.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "cisc-3.3",
+              "cisc-4.1",
+              "cisc-4.8",
+              "cisc-5.2",
+              "cisc-6.2",
+              "cisc-8.5"
+            ]
+          }
+        ]
+      }
+    ],
+    "modify": {
+      "alters": [
+        {
+          "control-id": "cisc-5.1",
+          "adds": [
+            {
+              "position": "ending",
+              "parts": [
+                {
+                  "id": "cisc-5.1_my_guidance",
+                  "name": "my_guidance",
+                  "prose": "Test guidance"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
